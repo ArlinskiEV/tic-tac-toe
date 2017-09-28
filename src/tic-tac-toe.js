@@ -21,7 +21,7 @@ class TicTacToe {
 
     isFinished() {
       //true if game is finished (e.g. there is a winner or it is a draw)
-      return this.noMoreTurns()||this.getWinner();
+      return this.noMoreTurns()||(!!this.getWinner());
     }
 
     getWinner() {
